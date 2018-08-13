@@ -1,0 +1,29 @@
+{
+  "name": "mi-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Sandeep Chikhale",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Sandeep3005/mission-node-api.git"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "http-status": "^1.2.0",
+    "mongoose": "^5.2.7"
+  },
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "nodemon": "^1.18.3"
+  }
+}
