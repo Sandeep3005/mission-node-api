@@ -18,4 +18,25 @@ router.post('/character', (req, res) => {
         });
 });
 
+router.get('/characters', (req, res) => {
+    characterModel.find()
+        .then((doc) => {
+            res.status(HTTP_STATUS.OK).send(doc);
+        })
+        .catch((err) => {
+            res.status(HTTP_STATUS.INTERNAL_SERVER_ERROR).json(err);
+        });
+});
+
+router.get('/characters/:id', (req, res) => {
+    let { id } = req.params;
+    characterModel.findById(id)
+        .then((doc) => {
+            res.status(HTTP_STATUS.OK).send(doc);
+        })
+        .catch((err) => {
+            res.status(HTTP_STATUS.INTERNAL_SERVER_ERROR).json(err);
+        });
+});
+
 module.exports = router;
