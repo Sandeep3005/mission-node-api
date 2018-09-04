@@ -30,7 +30,6 @@ let movieSchema = new mongoose.Schema({
   },
   director: [commonSubSchema],
   producers: [commonSubSchema],
-  cast: [commonSubSchema],
   seriesPosition: Number,
   relaseDate: {
     type: Date,

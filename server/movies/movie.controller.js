@@ -16,7 +16,7 @@ router.post('/movies', (req, res) => {
     })
     .catch((err) => {
       res.status(HTTP_STATUS.INTERNAL_SERVER_ERROR).json(err);
-    })
+    });
 });
 
 /**** PUT REQUESTS ******/
@@ -60,9 +60,10 @@ router.get('/movies/:id', (req, res) => {
     });
 });
 
-router.get('/movies/:seriesPosition', (req, res) => {
+router.get('/movies/position/:seriesPosition', (req, res) => {
   let { seriesPosition } = req.params;
-  movieModel.findOne({ seriesPosition})
+  console.log('seriesPosition', seriesPosition)
+  movieModel.findOne({ seriesPosition })
     .then((doc) => {
       res.status(HTTP_STATUS.OK).send(doc);
     })
