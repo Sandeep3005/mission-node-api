@@ -40,7 +40,7 @@ All routes as hosted on heroku need to be prefixed with
 ---
 ###### List of some features of API
 ###### Generate random team for Ethan
-* GET&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/characters/movie/id
+* GET&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/random_team
 
 
 <br>
