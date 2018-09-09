@@ -4,7 +4,6 @@ const characterModel = require('./character.model');
 const HTTP_STATUS = require('http-status');
 
 router.post('/character', (req, res) => {
-    console.log(req.body);
     if (!req.body) {
         res.status(HTTP_STATUS.BAD_REQUEST).send('Body not found');
     }
@@ -38,5 +37,22 @@ router.get('/characters/:id', (req, res) => {
             res.status(HTTP_STATUS.INTERNAL_SERVER_ERROR).json(err);
         });
 });
+
+
+router.get('/characters/movie/:id', (req, res) => {
+    let { id } = req.params;
+    getRandomCharacter().then((docs) => {
+        let characterInMovie = docs.filter((doc) => {
+            if (doc.movieAppearedIn.indexOf(id) > -1) {
+                return doc;
+            }
+        });
+        return res.send(characterInMovie);
+    });
+});
+
+function getRandomCharacter() {
+    return characterModel.find({});
+}
 
 module.exports = router;

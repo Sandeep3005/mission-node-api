@@ -21,7 +21,8 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
     "http-status": "^1.2.0",
-    "mongoose": "^5.2.7"
+    "mongoose": "^5.2.7",
+    "unique-random": "^2.0.0"
   },
   "devDependencies": {
     "eslint": "^5.3.0",
