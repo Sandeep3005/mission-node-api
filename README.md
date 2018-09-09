@@ -34,10 +34,18 @@ All routes as hosted on heroku need to be prefixed with
 ###### Get one particular character with ID
 * GET&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chracters/id
 
+###### Get all characters from a particular movie
+* GET&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chracters/movie/id
+
 ---
+###### List of some features of API
+###### Generate random team for Ethan
+* GET&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;/characters/movie/id
 
-###### This API is still work in progress
 
+<br>
+<br>
+-###### This API is still work in progress
 
 
 
