@@ -6,10 +6,10 @@ let serviceAccount: any = process.env.CRED;
 
 const NAMESPACE = "DB_CONFIG";
 
-console.log(process.env.CRED);
+console.log(process.env.serviceAccount);
 
 admin.initializeApp({
-  credential: admin.credential.cert(JSON.parse(serviceAccount)),
+  credential: admin.credential.cert(JSON.parse(JSON.stringify(serviceAccount))),
 });
 
 const db = admin.firestore();
