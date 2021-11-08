@@ -7,6 +7,8 @@ let serviceAccount: any = process.env.CRED;
 const NAMESPACE = "DB_CONFIG";
 
 console.log("env ==== ",process.env.serviceAccount);
+console.log("env 3333 ==== ",process.env.CRED);
+console.log("env 3333 ==== ",process.env.PROD);
 
 admin.initializeApp({
   credential: admin.credential.cert(JSON.parse(serviceAccount)),
