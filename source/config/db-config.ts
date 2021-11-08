@@ -9,7 +9,7 @@ const NAMESPACE = "DB_CONFIG";
 console.log(process.env.serviceAccount);
 
 admin.initializeApp({
-  credential: admin.credential.cert(JSON.parse(JSON.stringify(serviceAccount))),
+  credential: admin.credential.cert(JSON.parse(serviceAccount)),
 });
 
 const db = admin.firestore();
