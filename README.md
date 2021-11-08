@@ -2,7 +2,7 @@
 A simple yet powerful api to fetch data on mission impossible movies.
 
 #### Introduction
-This is the documentation for Version 2 (V1) of the Mission Impossible API, originally released July 2018.
+This is the documentation for Version 2 (V2) of the Mission Impossible API, originally released July 2018.
 
 #### Response Formats
 The default response format is JSON `application/json`.
