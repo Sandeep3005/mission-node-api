@@ -4,6 +4,9 @@ const serviceAccount = require("../../service_account.json");
 
 const NAMESPACE = "DB_CONFIG";
 
+console.log(process.env["TEST_ENV"]);
+console.log(process.env.TEST_ENV);
+
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
 });
