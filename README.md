@@ -23,16 +23,13 @@ All routes as hosted on heroku need to be prefixed with
 ###### Get one particular movie with ID
 * GET&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;movies/id
 
-###### Get one particular movie its position in series
-* GET  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;movies/position/seriesPosition
-
 ##### Character Route
 ---
 ###### List of all characters
 * GET&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chracters 
 
 ###### Get one particular character with ID
-* GET&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chracters/id
+* GET&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chracters/name
 
 ###### Get all characters from a particular movie
 * GET&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chracters/movie/id
