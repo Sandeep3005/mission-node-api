@@ -1,8 +1,7 @@
-import dotenv from "dotenv";
+const dotenv = require("dotenv");
 
 dotenv.config();
 
-console.log(process.env);
 const SERVER_HOSTNAME = process.env.HOST || "localhost";
 const SERVER_PORT = process.env.PORT || 1337;
 
